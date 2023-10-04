@@ -1,4 +1,5 @@
-﻿using Foundation;
+﻿using Assignment1.Models;
+using Foundation;
 
 namespace Assignment1
 {

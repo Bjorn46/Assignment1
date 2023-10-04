@@ -9,15 +9,21 @@
                FontSize="36"
                HorizontalOptions="CenterAndExpand" />
 
-        <Label Text="Welcome to the Debt Book app. Keep track of your debtors and creditors."
+        <Label Text="Welcome to the Debt Book app. Keep track of your debtors"
                FontSize="18"
                HorizontalOptions="CenterAndExpand"
                Margin="0,20,0,40"/>
-
-        <Button Text="View Debtors"
-                Clicked="OnCounterClicked"
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+            <Button Margin = "20" Text="View Debtors"
+                Clicked="OnViewDebtorClicked"
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand" />
+
+            <Button Margin = "20" Text="Add Debtor"
+                    Clicked="OnAddDebtorClicked"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand" />
+        </StackLayout>
 
     </StackLayout>
 

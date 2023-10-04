@@ -1,5 +1,6 @@
 ﻿using Android.App;
 using Android.Runtime;
+using Assignment1.Models;
 
 namespace Assignment1
 {

@@ -1,4 +1,5 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
@@ -53,22 +54,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="addDebtor.xaml.cs">
+	  <Compile Update="ViewModels\addDebtor.xaml.cs">
 	    <DependentUpon>addDebtor.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="DebtorsPage.xaml.cs">
+	  <Compile Update="ViewModels\DebtorsPage.xaml.cs">
 	    <DependentUpon>DebtorsPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="addDebtor.xaml">
+	  <MauiXaml Update="Views\addDebtor.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="DebtorsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="DetbitAndCreditspage.xaml">
+	  <MauiXaml Update="Views\DebtorsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

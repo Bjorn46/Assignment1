@@ -1,4 +1,6 @@
-﻿namespace Assignment1
+﻿
+
+namespace Assignment1
 {
     public partial class App : Application
     {

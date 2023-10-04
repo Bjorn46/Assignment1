@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace Assignment1
+namespace Assignment1.Models
 {
     public static class MauiProgram
     {
@@ -16,7 +16,7 @@ namespace Assignment1
                 });
 
 #if DEBUG
-		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

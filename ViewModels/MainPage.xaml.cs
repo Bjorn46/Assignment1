@@ -1,4 +1,6 @@
-﻿namespace Assignment1
+﻿ 
+
+namespace Assignment1
 {
     public partial class MainPage : ContentPage
     {
@@ -8,9 +10,14 @@
             InitializeComponent();
         }
         //Sender user til siden DeptorsPage
-        private async void OnCounterClicked(object sender, EventArgs e)
+        private async void OnViewDebtorClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new DebtorsPage());
+        }
+
+        private async void OnAddDebtorClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new addDebtor());
         }
     }
 }

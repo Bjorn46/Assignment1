@@ -25,22 +25,5 @@ namespace Assignment1
             DebtorsListView.ItemsSource = Debtors;
         }
 
-        private void OnAddDebtorClicked(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(DebtorNameEntry.Text) && int.TryParse(DebtorAmountEntry.Text, out int amount))
-            {
-                // Add the new debtor to the collection
-                Debtors.Add(new Debtor { Name = DebtorNameEntry.Text, Amount = amount });
-
-                // Clear the input fields after adding
-                DebtorNameEntry.Text = string.Empty;
-                DebtorAmountEntry.Text = string.Empty;
-            }
-            else
-            {
-                // Handle invalid input (optional)
-                // Display an error message or provide feedback to the user
-            }
-        }
     }
 }

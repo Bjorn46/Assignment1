@@ -14,5 +14,10 @@ namespace Assignment1
 
 
         }
+
+        private async void OnAddDebtorClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new addDebtor());
+        }
     }
 }
