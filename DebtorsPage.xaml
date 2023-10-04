@@ -3,18 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Assignment1.DebtorsPage">
 
-    <ListView x:Name="DebtorListView">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <StackLayout>
-                        <Label Text="{Binding Name}" />
-                        <Label Text="{Binding Amount, StringFormat='Amount: {0:F2}DKK'}" />
-                    </StackLayout>
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+    <StackLayout Padding="20">
 
+        <Label Text="Debtors"
+               FontSize="24"
+               HorizontalOptions="CenterAndExpand" />
+
+        <Entry Placeholder="Debtor Name"
+               x:Name="DebtorNameEntry"
+               HorizontalOptions="FillAndExpand"
+               Margin="0,10,0,10"/>
+
+        <Entry Placeholder="Amount"
+               Keyboard="Numeric"
+               x:Name="DebtorAmountEntry"
+               HorizontalOptions="FillAndExpand"
+               Margin="0,10,0,10"/>
+
+        <Button Text="Add Debtor"
+                Clicked="OnAddDebtorClicked"
+                HorizontalOptions="Center"
+                WidthRequest="200"/>
+
+        <ListView x:Name="DebtorsListView"
+                  ItemsSource="{Binding Debtors}"
+                  HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Amount}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
 
 </ContentPage>

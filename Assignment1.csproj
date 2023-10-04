@@ -53,13 +53,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="addDebtor.xaml.cs">
+	    <DependentUpon>addDebtor.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="DebtorsPage.xaml.cs">
 	    <DependentUpon>DebtorsPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="addDebtor.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="DebtorsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="DetbitAndCreditspage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

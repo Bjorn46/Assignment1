@@ -3,33 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Assignment1.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Start">
+    <StackLayout Padding="20" VerticalOptions="Center">
 
-            <Label
-                Text="The Dept Book"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Start" />
+        <Label Text="The Debt Book"
+               FontSize="36"
+               HorizontalOptions="CenterAndExpand" />
 
-            <Label
-                Text="Deptors"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+        <Label Text="Welcome to the Debt Book app. Keep track of your debtors and creditors."
+               FontSize="18"
+               HorizontalOptions="CenterAndExpand"
+               Margin="0,20,0,40"/>
 
-            <Button
-                x:Name="CounterBtn"
-                Text="View Deptors"
-                SemanticProperties.Hint="Counts the number of times you click"
+        <Button Text="View Debtors"
                 Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand" />
 
-        </VerticalStackLayout>
-    </ScrollView>
+    </StackLayout>
 
 </ContentPage>
