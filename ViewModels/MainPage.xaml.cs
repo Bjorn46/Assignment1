@@ -1,10 +1,9 @@
-﻿ 
+﻿using Assignment1.ViewModels;
 
 namespace Assignment1
 {
     public partial class MainPage : ContentPage
     {
-
         public MainPage()
         {
             InitializeComponent();

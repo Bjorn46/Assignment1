@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using Assignment1.ViewModels;
 
 namespace Assignment1.Models
 {
